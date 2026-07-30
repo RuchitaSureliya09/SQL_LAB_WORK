@@ -6,7 +6,8 @@ SELECT * FROM BOOK
 
 --1. List all books with their authors.
 SELECT B.TITLE , A.AUTHORNAME 
-FROM BOOK B INNER JOIN AUTHOR A
+FROM BOOK B 
+INNER JOIN AUTHOR A
 ON B.AUTHORID = A.AUTHORID
 
 --2. List all books with their publishers.
