@@ -1,5 +1,6 @@
-# 1. Assign everything in your TSQL folder as T-SQL and make it detectable
-**/tsql-scripts/**/*.sql linguist-language=TSQL linguist-detectable=true
+# 1. Force the global database extension to be treated as detectable text
+*.sql text linguist-detectable=true
 
-# 2. Assign everything in your SQL folder as standard SQL and make it detectable
-**/sql-scripts/**/*.sql linguist-language=SQL linguist-detectable=true
+# 2. Map your exact folders (replace with your actual folder names)
+**/sql-scripts/**/*.sql linguist-language=SQL
+**/tsql-scripts/**/*.sql linguist-language=TSQL
