@@ -1,8 +1,5 @@
-# 1. Force GitHub to count SQL files in the language bar
-*.sql linguist-detectable=true
+# 1. Assign everything in your TSQL folder as T-SQL and make it detectable
+**/tsql-scripts/**/*.sql linguist-language=TSQL linguist-detectable=true
 
-# 2. Assign standard SQL to its folder
-standard-sql/**/*.sql linguist-language=SQL
-
-# 3. Assign T-SQL to its folder
-tsql-scripts/**/*.sql linguist-language=TSQL
+# 2. Assign everything in your SQL folder as standard SQL and make it detectable
+**/sql-scripts/**/*.sql linguist-language=SQL linguist-detectable=true
